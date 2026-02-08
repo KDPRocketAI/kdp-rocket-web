@@ -1,0 +1,120 @@
+.header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.logoRocket {
+    font-size: 1.5rem;
+}
+
+.logoText {
+    color: white;
+}
+
+.nav {
+    display: flex;
+    gap: 1.5rem;
+    flex: 1;
+    align-items: center;
+}
+
+.navLink {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.navLink:hover {
+    color: white;
+}
+
+.authButtons {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.signInBtn,
+.signUpBtn {
+    padding: 0.5rem 1.25rem;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+    font-size: 0.9rem;
+}
+
+.signInBtn {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.signInBtn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.signUpBtn {
+    background: white;
+    color: #667eea;
+}
+
+.signUpBtn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.userMenu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.welcomeText {
+    color: white;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .welcomeText {
+        display: none;
+    }
+
+    .logoText {
+        font-size: 1rem;
+    }
+}

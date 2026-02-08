@@ -1,0 +1,156 @@
+{
+  "identity": {
+    "name": "E1",
+    "archetype": "The Anti-AI Designer",
+    "mission": "Create a social media automation tool that feels organic, human, and calm, contrasting the chaos of social media.",
+    "principles": [
+      "Fusion over Imitation: Mix Swiss precision with Organic warmth.",
+      "Emotion First: The tool should feel 'calm' and 'focused'.",
+      "Content is King: Data and media take center stage; UI recedes.",
+      "Negative Space: Aggressive use of whitespace (p-8 to p-12)."
+    ]
+  },
+  "typography": {
+    "headings": {
+      "family": "Chivo, sans-serif",
+      "weights": ["300", "900"],
+      "usage": "Use weight 900 for major headlines (Landing), 300 for elegant subheads. Tight tracking (-0.02em).",
+      "import_url": "https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700;900&family=Manrope:wght@400;500;600;700&display=swap"
+    },
+    "body": {
+      "family": "Manrope, sans-serif",
+      "weights": ["400", "500", "600"],
+      "usage": "High legibility for dashboard data. Relaxed line-height (1.6)."
+    }
+  },
+  "colors": {
+    "palette_name": "Organic Focus",
+    "mode": "light",
+    "base": {
+      "background": "#F9F9F7",
+      "foreground": "#1A1A1A",
+      "card": "#FFFFFF",
+      "card_foreground": "#1A1A1A"
+    },
+    "primary": {
+      "default": "#1A3C34",
+      "foreground": "#FFFFFF",
+      "description": "Deep Forest Green - Authority and Calm."
+    },
+    "secondary": {
+      "default": "#E3E3E1",
+      "foreground": "#1A3C34",
+      "description": "Stone Grey - Soft contrast."
+    },
+    "accent": {
+      "default": "#E07A5F",
+      "foreground": "#FFFFFF",
+      "description": "Terracotta - Warmth and Action (CTAs)."
+    },
+    "muted": {
+      "default": "#F0F0ED",
+      "foreground": "#666660"
+    },
+    "border": "#E3E3E1",
+    "input": "#E3E3E1",
+    "ring": "#1A3C34",
+    "gradients": {
+      "hero": "linear-gradient(135deg, #F9F9F7 0%, #E3E3E1 100%)",
+      "subtle_glow": "radial-gradient(circle at 50% 50%, rgba(224, 122, 95, 0.15), transparent 70%)"
+    }
+  },
+  "layout": {
+    "spacing_scale": "Generous. Use p-6, p-8, p-12. Avoid p-4.",
+    "grid_system": {
+      "dashboard": "Bento Grid (Mode B). Dense but with breathing room. Gap-6.",
+      "landing": "Tetris Grid (Mode A). Asymmetrical. Col-span-full for hero, col-span-4 for features."
+    },
+    "container": {
+      "max_width": "max-w-7xl",
+      "padding": "px-6 md:px-12"
+    },
+    "radius": {
+      "default": "rounded-xl",
+      "button": "rounded-full",
+      "card": "rounded-2xl"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-8 py-6 text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300",
+      "secondary": "bg-white border-2 border-primary/10 text-primary hover:border-primary hover:bg-primary/5 rounded-full px-8 py-6 font-medium transition-all"
+    },
+    "cards": {
+      "style": "bg-card border border-border/50 shadow-sm hover:shadow-md transition-all duration-300 rounded-2xl p-6",
+      "hover_effect": "translate-y-[-2px]"
+    },
+    "inputs": {
+      "style": "bg-white border-border focus:border-primary focus:ring-1 focus:ring-primary/20 rounded-lg h-12 px-4 transition-all"
+    },
+    "navigation": {
+      "style": "glassmorphism. bg-white/80 backdrop-blur-md border-b border-border/50 sticky top-0 z-50"
+    }
+  },
+  "visual_enhancers": {
+    "texture": "Add a subtle noise texture overlay to the background (opacity 0.03) to kill digital flatness.",
+    "shadows": "Soft, diffuse shadows. shadow-[0_8px_30px_rgb(0,0,0,0.04)].",
+    "glass": "backdrop-blur-xl bg-white/70 border border-white/20 shadow-sm"
+  },
+  "motion": {
+    "library": "framer-motion",
+    "transitions": {
+      "default": "type: 'spring', stiffness: 300, damping: 30",
+      "hover": "duration: 0.2, ease: 'easeOut'"
+    },
+    "interactions": {
+      "drag_drop": "Scale up slightly (1.02) on drag start. Add shadow-xl.",
+      "page_load": "Staggered fade-in-up for dashboard widgets."
+    }
+  },
+  "images": {
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1633933703119-5d25460ad829?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "alt": "Content creator working in a calm studio",
+      "category": "landing_hero"
+    },
+    "workspace": {
+      "url": "https://images.unsplash.com/photo-1696087225391-eb97abf5ba20?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "alt": "Minimalist desk setup",
+      "category": "about_section"
+    },
+    "sponsors": [
+      {
+        "url": "https://images.pexels.com/photos/9949426/pexels-photo-9949426.jpeg",
+        "alt": "Tech Partner 1"
+      },
+      {
+        "url": "https://images.pexels.com/photos/30608593/pexels-photo-30608593.jpeg",
+        "alt": "Tech Partner 2"
+      }
+    ]
+  },
+  "icons": {
+    "library": "lucide-react",
+    "style": "Stroke width 1.5px. Color: CurrentColor (usually Primary or Muted-Foreground).",
+    "platform_icons": "Use react-icons/fa (FaInstagram, FaTwitter, FaFacebook, FaGoogleDrive) for brand logos."
+  },
+  "instructions_to_main_agent": [
+    "1. THEME SETUP: Update tailwind.config.js with the 'Organic Focus' color palette. Do NOT use default blue.",
+    "2. FONTS: Add the Google Fonts import to index.css immediately.",
+    "3. LAYOUT: Build the Dashboard using a 'Bento Grid'. Do not just stack cards vertically. Use col-span-2 for main charts.",
+    "4. LANDING PAGE: Use the 'Tetris Grid' for the features section. Use the 'Jupiter 2 Studio' image as the Hero background or side visual.",
+    "5. COMPONENTS: Customize Shadcn components. Remove the default 'radius-md' look and make it 'rounded-xl' or 'rounded-2xl'. Increase padding inside cards.",
+    "6. MOTION: Wrap the main dashboard grid in a Framer Motion <motion.div> with staggered children animations.",
+    "7. TEXTURE: Add a fixed position div with a noise background image (base64 or url) at z-index -1 to give the app texture.",
+    "8. CRITICAL: Do not use 'Inter' font. Use 'Manrope' for UI and 'Chivo' for Headings."
+  ],
+  "universal_guidelines": [
+    "Avoid 'AI Slop': No generic gradients, no centered text blocks without purpose.",
+    "Dark colors look good when used independently without gradients.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur).",
+    "NEVER use AI assistant Emoji characters like 🤖🧠 etc.",
+    "Every interaction needs micro-animations.",
+    "Use 'sonner' for toasts."
+  ]
+}
