@@ -515,11 +515,14 @@ export function generateBookIdea(
     }
 
     return {
-        title: String(title),
-        subtitle: String(subtitle),
-        description: String(description),
-        structure: String(structure),
-    }
+        title,
+        subtitle,
+        description,
+        structure,
+        pageCountRecommendation,
+        difficulty
+    };
+
 
 }
 
