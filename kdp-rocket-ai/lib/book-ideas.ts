@@ -506,14 +506,13 @@ export function generateBookIdea(
         }
     }
 
-    return {
-        title,
-        subtitle,
-        description,
-        structure,
-        pageCountRecommendation,
-        difficulty
-    };
+   return {
+  title: String(title),
+  subtitle: String(subtitle),
+  description: String(description),
+  structure: String(structure),
+}
+
 }
 
 // Get displaynames for dropdowns
