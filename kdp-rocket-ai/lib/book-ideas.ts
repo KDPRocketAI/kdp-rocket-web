@@ -7,8 +7,15 @@ export interface BookIdea {
     subtitle: string;
     description: string;
     structure: string;
-    pageCountRecommendation: string;
-    difficulty?: string;
+    return {
+    title,
+    subtitle,
+    description,
+    structure,
+    pageCountRecommendation,
+    difficulty
+};
+
 }
 
 interface Template {
@@ -473,10 +480,11 @@ export function generateBookIdea(
         structureTemplates: [`50-100 pages of quality ${bookType.split('-').join(' ')} content, solutions included`]
     };
 
-    const title = getRandomItem(template.titleTemplates);
-    const subtitle = getRandomItem(template.subtitleTemplates);
-    const description = getRandomItem(template.descriptionTemplates);
-    const structure = getRandomItem(template.structureTemplates);
+    const title = getRandomItem(template.titleTemplates) as string;
+    const subtitle = getRandomItem(template.subtitleTemplates) as string;
+    const description = getRandomItem(template.descriptionTemplates) as string;
+    const structure = getRandomItem(template.structureTemplates) as string;
+
 
     // Determine page count based on book type and audience
     let pageCountRecommendation = '100-120 pages';
