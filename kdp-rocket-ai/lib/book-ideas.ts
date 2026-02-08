@@ -506,12 +506,12 @@ export function generateBookIdea(
         }
     }
 
-   return {
-  title: String(title),
-  subtitle: String(subtitle),
-  description: String(description),
-  structure: String(structure),
-}
+    return {
+        title: String(title),
+        subtitle: String(subtitle),
+        description: String(description),
+        structure: String(structure),
+    }
 
 }
 
