@@ -18,7 +18,7 @@ interface Template {
     structureTemplates: string[];
 }
 
-const TEMPLATES: any = {
+const TEMPLATES: Record<BookType, Partial<Record<Audience, Partial<Record<Theme, Template>>>>> = {
     'word-search': {
         'kids-4-6': {
             'animals': {
