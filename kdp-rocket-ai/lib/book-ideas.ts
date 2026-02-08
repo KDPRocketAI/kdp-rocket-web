@@ -7,15 +7,8 @@ export interface BookIdea {
     subtitle: string;
     description: string;
     structure: string;
-    return {
-    title,
-    subtitle,
-    description,
-    structure,
-    pageCountRecommendation,
-    difficulty
-};
-
+    pageCountRecommendation: string;
+    difficulty?: string;
 }
 
 interface Template {
