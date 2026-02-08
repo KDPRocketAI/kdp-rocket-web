@@ -462,9 +462,11 @@ const TEMPLATES: Record<BookType, Partial<Record<Audience, Partial<Record<Theme,
 };
 
 // Helper function to get a random item from an array
-function getRandomItem<T>(array: T[]): T {
+function getRandomItem<T>(array: T[]): T | undefined {
+    if (!array || array.length === 0) return undefined;
     return array[Math.floor(Math.random() * array.length)];
 }
+
 
 // Generate a book idea based on inputs
 export function generateBookIdea(
