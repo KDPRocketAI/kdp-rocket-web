@@ -1,14 +1,10 @@
 import styles from './page.module.css';
 import BookIdeaGenerator from '@/components/BookIdeaGenerator';
 import InteriorGenerator from '@/components/InteriorGenerator';
-import Header from '@/components/Header';
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      {/* Header */}
-      <Header />
-
       {/* Main Content */}
       <div className="container">
         {/* Book Idea Generator Section */}
