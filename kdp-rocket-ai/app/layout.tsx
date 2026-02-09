@@ -9,6 +9,7 @@ const inter = Inter({
   display: 'swap',
 });
 
+// Header is rendered globally for all pages including /interior-generator
 export const metadata: Metadata = {
   title: "KDP Rocket AI - Free Book Idea & Interior Generator",
   description: "Generate book ideas and create KDP-ready interior PDFs for free. Word search, maze, sudoku, journal, and dot grid generators for Amazon KDP publishers.",
