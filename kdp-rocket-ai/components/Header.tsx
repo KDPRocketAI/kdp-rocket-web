@@ -15,15 +15,6 @@ export default function Header() {
                     <span className={styles.logoText}>KDP Rocket AI</span>
                 </Link>
 
-                <nav className={styles.nav}>
-                    <Link href="/" className={styles.navLink}>
-                        Book Ideas
-                    </Link>
-                    <Link href="/interior-generator" className={styles.navLink}>
-                        Interior Generator
-                    </Link>
-                </nav>
-
                 <div className={styles.authButtons}>
                     {!isSignedIn ? (
                         <>
